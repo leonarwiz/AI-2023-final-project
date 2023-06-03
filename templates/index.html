@@ -7,51 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="display: flex; justify-content: space-around;">
-        <div>
-            <h3>Options</h3>
-            <form action="/process" method="post" enctype="multipart/form-data">
-                <h4>Expression</h4>
-                <input type="radio" id="happy" name="expression" value="happy">
-                <label for="happy">Happy</label><br>
-                <input type="radio" id="sad" name="expression" value="sad">
-                <label for="sad">Sad</label><br>
-                <input type="radio" id="angry" name="expression" value="angry">
-                <label for="angry">Angry</label>
+    <h2>Select features and upload image</h2>
 
-                <h4>Hair Style</h4>
-                <input type="radio" id="style1" name="hair_style" value="style1">
-                <label for="style1">Style 1</label><br>
-                <input type="radio" id="style2" name="hair_style" value="style2">
-                <label for="style2">Style 2</label><br>
-                <input type="radio" id="style3" name="hair_style" value="style3">
-                <label for="style3">Style 3</label><br>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="hairColor">Choose hair color:</label>
+        <select id="hairColor" name="hairColor">
+          <option value="black">Black</option>
+          <option value="blonde">Blonde</option>
+          <!-- Add more options -->
+        </select>
 
-                <h4>Hair Color</h4>
-                <input type="radio" id="black" name="hair_color" value="black">
-                <label for="black">Black</label><br>
-                <input type="radio" id="blonde" name="hair_color" value="blonde">
-                <label for="blonde">Blonde</label><br>
-                <input type="radio" id="red" name="hair_color" value="red">
-                <label for="blonde">Red</label><br>
+        <label for="hairStyle">Choose hair style:</label>
+        <select id="hairStyle" name="hairStyle">
+          <option value="style1">Style 1</option>
+          <option value="style2">Style 2</option>
+          <!-- Add more options -->
+        </select>
 
-                <br>
-                <input type="file" id="file" name="file">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-
-        <div>
-            <h3>Upload Image</h3>
-            <div id="drop_zone" style="width: 200px; height: 200px; border: 1px solid black;">
-                Drop image here
-            </div>
-        </div>
-    </div>
-
-    <div id="result-box">
-        
-    </div>
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Upload">
+    </form>
 </body>
 </html>
-
