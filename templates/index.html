@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-around;">
+        <div>
+            <h3>Options</h3>
+            <form action="/process" method="post" enctype="multipart/form-data">
+                <h4>Expression</h4>
+                <input type="radio" id="happy" name="expression" value="happy">
+                <label for="happy">Happy</label><br>
+                <input type="radio" id="sad" name="expression" value="sad">
+                <label for="sad">Sad</label><br>
+                <input type="radio" id="angry" name="expression" value="angry">
+                <label for="angry">Angry</label>
+
+                <h4>Hair Style</h4>
+                <input type="radio" id="style1" name="hair_style" value="style1">
+                <label for="style1">Style 1</label><br>
+                <input type="radio" id="style2" name="hair_style" value="style2">
+                <label for="style2">Style 2</label><br>
+                <input type="radio" id="style3" name="hair_style" value="style3">
+                <label for="style3">Style 3</label><br>
+
+                <h4>Hair Color</h4>
+                <input type="radio" id="black" name="hair_color" value="black">
+                <label for="black">Black</label><br>
+                <input type="radio" id="blonde" name="hair_color" value="blonde">
+                <label for="blonde">Blonde</label><br>
+                <input type="radio" id="red" name="hair_color" value="red">
+                <label for="blonde">Red</label><br>
+
+                <br>
+                <input type="file" id="file" name="file">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div>
+            <h3>Upload Image</h3>
+            <div id="drop_zone" style="width: 200px; height: 200px; border: 1px solid black;">
+                Drop image here
+            </div>
+        </div>
+    </div>
+
+    <div id="result-box">
+        
+    </div>
+</body>
+</html>
+
