@@ -4,28 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h2>Select features and upload image</h2>
-
-    <form action="/" method="post" enctype="multipart/form-data">
-        <label for="hairColor">Choose hair color:</label>
-        <select id="hairColor" name="hairColor">
-          <option value="black">Black</option>
-          <option value="blonde">Blonde</option>
-          <!-- Add more options -->
-        </select>
-
-        <label for="hairStyle">Choose hair style:</label>
-        <select id="hairStyle" name="hairStyle">
-          <option value="style1">Style 1</option>
-          <option value="style2">Style 2</option>
-          <!-- Add more options -->
-        </select>
-
-        <input type="file" name="file" accept="image/*">
-        <input type="submit" value="Upload">
-    </form>
+    <header class="header">
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">StarGAN</span>
+                <span class="heading-primary-sub">
+                    <div class="line">
+                        <p>Transform</p>
+                        <p>and</p>
+                    </div>
+                    <div class="line">
+                        <p>Personalize</p>
+                    </div>
+                    <div class="line">
+                        <p>Your</p>
+                        <p>Images</p>
+                        <p>to </p>
+                    </div>
+                      Your Images to Match Your Desired Look"
+                </span>
+            </h1>
+        </div>
+    </header>
+    <main>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div id="feature-select-box" class="neo-shadowv">
+                <label for="hairColor">Choose hair color:</label>
+                <select id="hairColor" name="hairColor">
+                <option value="black">Black</option>
+                <option value="blonde">Blonde</option>
+                <!-- Add more options -->
+                </select>
+    
+                <label for="hairStyle">Choose hair style:</label>
+                <select id="hairStyle" name="hairStyle">
+                <option value="style1">Style 1</option>
+                <option value="style2">Style 2</option>
+                <!-- Add more options -->
+                </select>
+            </div>
+            <div id="upload-box" class="neo-shadow">
+                <input type="file" id="file" name="file" accept="image/*" style="display:none;">
+                <label for="file" class="brutal-upload">Choose File</label>
+                <input type="submit" value="Upload" class="brutal-btn">
+            </div>
+        </form>
+    </main>
+    
 </body>
 </html>

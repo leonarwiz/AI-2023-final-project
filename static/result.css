@@ -1,0 +1,55 @@
+*{
+    box-sizing : border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+
+body.brutal-bg {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.brutal-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.brutal-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.brutal-subtitle {
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.brutal-text {
+    font-size: 1em;
+}
+
+.brutal-img {
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+}
+
+.brutal-btn {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    padding: 0.5em 1em;
+    margin-top: 2em;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.brutal-btn:hover {
+    background: #000;
+    color: #fff;
+}

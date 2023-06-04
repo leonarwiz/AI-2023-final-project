@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Result</title>
+    <link rel="stylesheet" href="../static/result.css">
 </head>
-<body>
-    
+<body class="brutal-bg">
+    <div class="brutal-container">
+        <h1 class="brutal-title">Your Style Result</h1>
+        
+        <h2 class="brutal-subtitle">You selected:</h2>
+        <p class="brutal-text">Hair Color: {{ hairColor }}</p>
+        <p class="brutal-text">Hair Style: {{ hairStyle }}</p>
+        
+        <h2 class="brutal-subtitle">Result Image:</h2>
+        <img src="{{ url_for('static', filename=image_path) }}" alt="Image" class="brutal-img">
+        <a href="/" class="brutal-btn">Try again</a>
+    </div>
 </body>
 </html>

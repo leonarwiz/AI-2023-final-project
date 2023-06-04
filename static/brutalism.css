@@ -1,0 +1,115 @@
+.item {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    border: 4px solid #000;
+    padding: 2rem;
+    margin: 4rem auto;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .item::before,
+  .item::after {
+    background: #FFF;
+    box-sizing: border-box;
+    border: 4px solid #000;
+    display: block;
+    content: "";
+    position: absolute;
+  }
+  
+  .item::before {
+    border-top-width: 3px;
+    border-bottom-width: 5px;
+    border-right: 0;
+    height: calc(100% + 8px);
+    width: 20px;
+    left: -24px;
+    top: -22px;
+    transform: skewY(45deg);
+  }
+  
+  .item::after {
+    border-left-width: 3px;
+    border-right-width: 5px;
+    border-bottom: 0;
+    left: -22px;
+    top: -24px;
+    height: 20px;
+    width: calc(100% + 8px);
+    transform: skewX(45deg);
+  }
+  
+  .item--shadow {
+    border-top: 0;
+    border-left: 0;
+  }
+  
+  .item--shadow::before,
+  .item--shadow::after {
+    background: #000;
+    border-color: #FFF;
+  }
+  
+  .item--shadow::before {
+    border: 4px solid #000;
+    left: -24px;
+    height: calc(100% + 10px);
+    top: -21px;
+  }
+  
+  .item--shadow::after {
+    border: 4px solid #000;
+    width: calc(100% + 4px);
+    top: -24px;
+    left: -10px;
+  }
+  
+  .item__hed {
+    margin: 0;
+  }
+  
+  .item__led {
+    line-height: 1.45;
+    margin: 1em 0 0;
+  }
+  
+
+  select, input[type="file"], input[type="submit"] {
+    background: transparent;
+    border: 3px solid #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    color: #000;
+}
+
+input[type="submit"] {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+label.brutal-upload {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border: 3px solid #000;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    transition: background 0.3s, color 0.3s;
+}
+
+label.brutal-upload:hover {
+    background: #fff;
+    color: #000;
+}
