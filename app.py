@@ -22,6 +22,8 @@ def upload_file():
     if request.method == 'POST':
         # Get the file from post request
         f = request.files['file']
+        selected_features = request.form.get('hairColor')
+        processed = process_img(f)
 
         # Save the file to ./uploads
         filename = secure_filename(f.filename)
