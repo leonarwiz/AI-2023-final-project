@@ -1,10 +1,10 @@
 @import url("brutalism.css");
+@import url("3d.css");
 
 *{
     box-sizing : border-box;
     padding:0;
     margin:0;
-    
 }
 
 body {
@@ -25,9 +25,16 @@ h2{
 }
   
   main {
+    display: block;
     margin: 0 auto;
     padding: 4rem 0;
     width: 100%;
+  }
+  header{
+    height: 70vh;
+    background-size:cover;
+    background-position : top;
+    position : relative;
   }
   
   form {
